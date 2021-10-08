@@ -1,9 +1,9 @@
 #!/bin/bash
-pushd front
+pushd ../front
 yarn build
 popd
 
-pushd back
+pushd ../back
 npm run build
 popd
 
