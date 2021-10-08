@@ -1,4 +1,4 @@
-@ECHO OFF
+@ECHO
 
 CALL stop.bat
 
