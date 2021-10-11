@@ -5,6 +5,7 @@ popd
 
 pushd ../back
 npm run build
+sleep 3
 popd
 
 git add .
