@@ -6,9 +6,13 @@ database=(studylab3 studylab2 studylab)
 
 for idx in 0 1 2
 do
-  CLIENT_PORT=$client[$idx]
-  SERVER_PORT=$server[$idx]
-  DATABASE_NAME=$database[$idx]
+  CLIENT_PORT=${client[${idx}]}
+  SERVER_PORT=${server[${idx}]}
+  DATABASE_NAME=${database[${idx}]}
+
+  echo $CLIENT_PORT
+  echo $SERVER_PORT
+  echo $DATABASE_NAME
 
   pushd ../front
 
