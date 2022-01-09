@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.js": "/static/js/main.125ae15f.chunk.js",
-    "main.js.map": "/static/js/main.125ae15f.chunk.js.map",
+    "main.js": "/static/js/main.65691d90.chunk.js",
+    "main.js.map": "/static/js/main.65691d90.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.41cb235e.js",
     "runtime-main.js.map": "/static/js/runtime-main.41cb235e.js.map",
-    "static/js/2.a8a5f58b.chunk.js": "/static/js/2.a8a5f58b.chunk.js",
-    "static/js/2.a8a5f58b.chunk.js.map": "/static/js/2.a8a5f58b.chunk.js.map",
+    "static/js/2.460df722.chunk.js": "/static/js/2.460df722.chunk.js",
+    "static/js/2.460df722.chunk.js.map": "/static/js/2.460df722.chunk.js.map",
     "index.html": "/index.html",
-    "static/js/2.a8a5f58b.chunk.js.LICENSE.txt": "/static/js/2.a8a5f58b.chunk.js.LICENSE.txt",
+    "static/js/2.460df722.chunk.js.LICENSE.txt": "/static/js/2.460df722.chunk.js.LICENSE.txt",
     "static/media/studylab_logo.e297465c.png": "/static/media/studylab_logo.e297465c.png"
   },
   "entrypoints": [
     "static/js/runtime-main.41cb235e.js",
-    "static/js/2.a8a5f58b.chunk.js",
-    "static/js/main.125ae15f.chunk.js"
+    "static/js/2.460df722.chunk.js",
+    "static/js/main.65691d90.chunk.js"
   ]
 }

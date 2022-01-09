@@ -18,7 +18,7 @@ do
 
   cp .env.template .env.production
   API_SERVER_URI=localhost:${SERVER_PORT}
-  sed -i "s/PARAM_API_SERVER_URI/${API_SERVER_URI}/g" .env.production
+  sed "s/PARAM_API_SERVER_URI/${API_SERVER_URI}/g" .env.production
 
   yarn build
   popd
@@ -26,9 +26,9 @@ do
   pushd ../back
 
   cp .env.template .env.production
-  MONGO_URI="mongodb+srv://studylab:1234@cluster0.pbv5i.mongodb.net/${DATABASE_NAME}?retryWrites=true&w=majority"
-  sed -i "s%PARAM_MONGO_URI%${MONGO_URI}%g" .env.production
-  sed -i "s/PARAM_PORT/${SERVER_PORT}/g" .env.production
+  MONGO_URI="mongodb+srv://studylab:1234@cluster0.pbv5i.mongodb.net/${DATABASE_NAME}?retryWrites=true\&w=majority"
+  sed "s%PARAM_MONGO_URI%${MONGO_URI}%g" .env.production
+  sed "s/PARAM_PORT/${SERVER_PORT}/g" .env.production
 
   npm run build
   popd
@@ -36,9 +36,9 @@ do
   cp start-template.bat start.bat
   cp stop-template.bat stop.bat
 
-  sed -i "s/PARAM_CLIENT_PORT/${CLIENT_PORT}/g" start.bat
-  sed -i "s/PARAM_SERVER_PORT/${SERVER_PORT}/g" start.bat
-  sed -i "s/PARAM_SERVER_PORT/${SERVER_PORT}/g" stop.bat
+  sed "s/PARAM_CLIENT_PORT/${CLIENT_PORT}/g" start.bat
+  sed "s/PARAM_SERVER_PORT/${SERVER_PORT}/g" start.bat
+  sed "s/PARAM_SERVER_PORT/${SERVER_PORT}/g" stop.bat
 
   git add .
   git commit -m "update files"
