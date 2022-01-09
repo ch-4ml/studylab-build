@@ -27,7 +27,7 @@ do
 
   cp .env.template .env.production
   MONGO_URI="mongodb+srv://studylab:1234@cluster0.pbv5i.mongodb.net/${DATABASE_NAME}?retryWrites=true&w=majority"
-  sed -i "s|PARAM_MONGO_URI|${MONGO_URI}|g" .env.production
+  sed -i "s%PARAM_MONGO_URI%${MONGO_URI}%g" .env.production
   sed -i "s/PARAM_PORT/${SERVER_PORT}/g" .env.production
 
   npm run build
