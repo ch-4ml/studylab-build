@@ -6,4 +6,4 @@ git pull
 
 START ./studylab-api.exe
 
-START npx serve -l 3002[0] -s .
+START npx serve -l 3002[1] -s .
