@@ -6,4 +6,4 @@ git pull
 
 START ./studylab-api.exe
 
-START npx serve -l PARAM_CLIENT_PORT -s .
+START npx serve -l 3002 -s .
