@@ -17,8 +17,8 @@ do
   pushd ../front
 
   cp .env.template .env.production
-  API_SERVER_URI=localhost:${SERVER_PORT}
-  sed -i "s/PARAM_API_SERVER_URI/${API_SERVER_URI}/g" .env.production
+  API_SERVER_URI=http://localhost:${SERVER_PORT}
+  sed -i "s%PARAM_API_SERVER_URI%${API_SERVER_URI}%g" .env.production
 
   yarn build
   popd
