@@ -1,10 +1,10 @@
 #!/bin/bash
 
-client=(3002 3001 3000)
-server=(1116 1115 1114)
-database=(studylab3 studylab2 studylab)
+client=(3003 3002 3001 3000)
+server=(1117 1116 1115 1114)
+database=(studylab4 studylab3 studylab2 studylab)
 
-for idx in 0 1 2
+for idx in 0 1 2 3
 do
   CLIENT_PORT=${client[${idx}]}
   SERVER_PORT=${server[${idx}]}
